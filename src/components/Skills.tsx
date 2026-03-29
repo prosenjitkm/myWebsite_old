@@ -2,7 +2,7 @@ import React from "react";
 import Image from 'next/image';
 import {
     SiHtml5,
-    SiCss3,
+    SiCss,
     SiJavascript,
     SiTypescript,
     SiAngular,
@@ -14,13 +14,12 @@ import {
     SiGitlab,
     SiPostman,
     SiSwagger,
-    SiOracle,
     SiMysql,
     SiRedis,
     SiJenkins,
     SiApachemaven,
     SiGradle,
-    SiSonarqube,
+    SiSonarqubeserver,
     SiIntellijidea,
     SiEclipseide,
     SiPowers,
@@ -68,7 +67,7 @@ export default function Skills() {
 
         // frontend
         if (key.includes('html')) return <SiHtml5 size={24} color="#E34F26" aria-label="HTML5" role="img" />;
-        if (key.includes('css')) return <SiCss3 size={24} color="#1572B6" aria-label="CSS3" role="img" />;
+        if (key.includes('css')) return <SiCss size={24} color="#1572B6" aria-label="CSS3" role="img" />;
         if (key.includes('javascript') || key === 'js') return <SiJavascript size={24} color="#F7DF1E" aria-label="JavaScript" role="img" />;
         if (key.includes('typescript') || key === 'ts') return <SiTypescript size={24} color="#3178C6" aria-label="TypeScript" role="img" />;
         if (key.includes('angular')) return <SiAngular size={24} color="#DD0031" aria-label="Angular" role="img" />;
@@ -105,7 +104,6 @@ export default function Skills() {
         if (key.includes('gradle')) return <SiGradle size={24} color="#2DBE3E" aria-label="Gradle" role="img" />;
 
         // data stores
-        if (key.includes('oracle')) return <SiOracle size={24} color="#F80000" aria-label="Oracle" role="img" />;
         if (key.includes('mysql')) return <SiMysql size={24} color="#00A6E0" aria-label="MySQL" role="img" />;
         if (key.includes('redis')) return <SiRedis size={24} color="#D82C20" aria-label="Redis" role="img" />;
 
@@ -120,7 +118,7 @@ export default function Skills() {
         // tools / ide / quality
         if (key.includes('intellij') || key.includes('idea')) return <SiIntellijidea size={24} color="#FFFFFF" aria-label="IntelliJ" role="img" />;
         if (key.includes('eclipse')) return <SiEclipseide size={24} color="#FFFFFF" aria-label="Eclipse" role="img" />;
-        if (key.includes('sonar') || key.includes('sonarqube')) return <SiSonarqube size={24} color="#00CFFF" aria-label="SonarQube" role="img" />;
+        if (key.includes('sonar') || key.includes('sonarqube')) return <SiSonarqubeserver size={24} color="#00CFFF" aria-label="SonarQube" role="img" />;
         if (key.includes('jira') || key.includes('agile')) return <SiJira size={24} color="#0052CC" aria-label="Jira" role="img" />;
 
         // PowerShell fallback

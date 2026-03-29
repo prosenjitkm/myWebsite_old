@@ -3,7 +3,8 @@
 import Image from "next/image";
 import React from "react";
 import Typewriter from "./Typewriter";
-import { SiFacebook, SiGithub, SiLinkedin } from 'react-icons/si';
+import { SiFacebook, SiGithub } from 'react-icons/si';
+import { FaLinkedin } from 'react-icons/fa6';
 
 export default function Hero() {
     return (
@@ -49,7 +50,7 @@ export default function Hero() {
                                 aria-label="LinkedIn"
                                 className="px-3 py-2 rounded-md bg-blue-600 text-white hover:bg-blue-700 transition flex items-center gap-2"
                             >
-                                <SiLinkedin size={20} aria-hidden={false} />
+                                <FaLinkedin size={20} aria-hidden={false} />
                             </a>
 
                             <a

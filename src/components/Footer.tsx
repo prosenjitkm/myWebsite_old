@@ -1,5 +1,6 @@
 import React from 'react';
-import { SiGithub, SiLinkedin, SiFacebook } from 'react-icons/si';
+import { SiGithub, SiFacebook } from 'react-icons/si';
+import { FaLinkedin } from 'react-icons/fa6';
 import { FiArrowUp } from 'react-icons/fi';
 
 export default function Footer() {
@@ -25,7 +26,7 @@ export default function Footer() {
                         <SiGithub size={18} />
                     </a>
                     <a href="https://www.linkedin.com/in/prosenjitkm/" target="_blank" rel="noreferrer" aria-label="LinkedIn" className="text-site-muted hover:text-white">
-                        <SiLinkedin size={18} />
+                        <FaLinkedin size={18} />
                     </a>
                     <a href="https://www.facebook.com/prosenjitkm" target="_blank" rel="noreferrer" aria-label="Facebook" className="text-site-muted hover:text-white">
                         <SiFacebook size={18} />
